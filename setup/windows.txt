@@ -1,0 +1,7 @@
+* Visual Studio
+* Solutions
+  * .sln
+* Projects
+  * vcxproj
+* Project Settings & Properties
+  
