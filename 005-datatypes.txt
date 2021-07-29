@@ -1,7 +1,16 @@
 * Integer
 * Floating Point
 * Char
-* Arrays
 * Struct
+  https://www.geeksforgeeks.org/structures-c/
+* Arrays
 * Enum
 * Union
+
+============================
+
+* Variable declaration
+* Initialization
+* Assigment
+
+===========================
