@@ -15,3 +15,56 @@
 * Assigment
 
 ===========================
+Union 
+===========================
+// proj002.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+struct Mpc
+{
+    int maths;  // 4 bytes
+    int physics; // 4 bytes
+    int chemistry; // 4 bytes
+};
+
+struct Bpc
+{
+    float biocheckmistry; // 4 bytes
+    float biocheckmistry1; // 4 bytes
+    double physics; // 8 bytes
+    double chemistry; // 8 bytes
+};
+
+union Marks
+{
+    Mpc mpc; // sizeof(mpc) 12
+    Bpc bpc; // sizeof(bpc) 24
+};
+
+struct Student
+{
+    int roleNumber;  // 4
+    int stream; // 4
+    Marks marks; // max (12, 24)
+};
+// - - - - | - - - - | - - - - - - - - - - - - - - - - - - - - - - - - 
+
+int main()
+{
+    std::cout << "size of Student : " << sizeof(Student) << std::endl;
+
+    Student student1 = { 10, 1,{ 10, 20, 0 } };
+
+    // - - - - | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - |
+    //  10          1       10          20         0       0        0           0
+
+    std::cout << "Physics : " << student1.marks.mpc.physics << std::endl;
+    std::cout << "Chemistry : " << student1.marks.mpc.chemistry << std::endl;
+
+    return 0;
+}
+
+==============================================================================
