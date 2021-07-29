@@ -1,0 +1,2 @@
+* How to send commandline args to programs
+* How to access them in the program
