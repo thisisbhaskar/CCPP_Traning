@@ -1,3 +1,69 @@
-* For
-* while
-* do-while
+For
+===============================================
+  
+
+for (statement1; statement2; statement3)
+{
+	statement4;
+	statement5;
+}
+
+--------------------------
+
+Initialization: statement1;
+
+Repate:
+statement2;
+if ( output of statement2 == true)
+{
+	statement4;
+	statement5;
+
+	
+	=> statement3;
+}
+else
+{
+	come out of the loop;
+}
+
+for (int i = 0; i <= 10; i++)
+{
+	std::cout << i << std:endl;
+}
+
+
+while
+===============================================
+
+statatement1;
+while (statement2)
+{
+	statement4;
+	statement5;
+  
+  statement3;
+}
+
+--------------------------
+
+Initialization: statement1;
+
+Repate:
+statement2;
+if ( output of statement2 == true)
+{
+	statement4;
+	statement5;
+
+	
+	=> statement3;
+}
+else
+{
+	come out of the loop;
+}
+
+
+do-while
+============================
