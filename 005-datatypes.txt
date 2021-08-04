@@ -7,7 +7,7 @@
 * Enum
 * Union
   https://www.geeksforgeeks.org/difference-structure-union-c/
-  
+* typedef
 ============================
 
 * Variable declaration
