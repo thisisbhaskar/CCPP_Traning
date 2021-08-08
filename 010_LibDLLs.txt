@@ -1,1 +1,14 @@
+All code in each function
+==========================
 
+All code in different functions in same file
+============================================
+
+Functions in different files
+============================
+
+Static Lib
+==========
+
+DLL
+===
